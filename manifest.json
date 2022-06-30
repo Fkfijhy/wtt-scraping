@@ -1,0 +1,29 @@
+{
+
+    "manifest_version": 2,
+    "name": "WTT-scraping",
+    "version": "1.0",
+
+    "description": "Mozilla extension to extract whatthetune songs.",
+
+    "icons": {
+        "48": "icons/christina_agorilla.png"
+    },
+
+    "browser_action": {
+        "default_icon": "icons/christina_agorilla.jpg",
+        "default_title": "WTT",
+        "default_popup": "popup/copy_songs.html"
+    },
+
+    "content_scripts": [{
+        "matches": ["*://whatthetune.com/*"],
+        "js": ["extract_song.js"]
+    }],
+
+    "permissions": [
+        "clipboardWrite",
+        "activeTab"
+    ]
+
+}
