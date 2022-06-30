@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="tab-menu">
+            <button id="button-command">Command</button>
+            <button id="button-prepa">Preparation</button>
+            <button id="button-oven">Oven</button>
+            <button id="button-service">Service</button>
+        </div>
+        <div id="command-line"></div>
+        <div class="tab active" id="tab-command">
+            <h1>Command</h1>
+            <button id="take-order">Take order.</button>
+        </div>
+        <div class="tab " id="tab-prepa">
+            <h1>Preparation</h1>
+        </div>
+        <div class="tab " id="tab-oven">
+            <h1>Oven</h1>
+        </div>
+        <div class="tab " id="tab-service">
+            <h1>Service</h1>
+        </div>
+    </div>
+    <!-- Loads the background scripts (executed in the popup) -->
+    <script type="module" src="game.js"></script>
+</body>
+
+</html>
